@@ -1,0 +1,90 @@
+{\rtf1\ansi\ansicpg932\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fnil\fcharset128 HiraginoSans-W3;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \uc0\u9632 
+\f1 \'83\'66\'81\'5b\'83\'5e\'83\'78\'81\'5b\'83\'58\'8d\'ec\'90\'ac
+\f0 \
+CREATE DATABASE restaurant_db;\
+\
+\
+\uc0\u9632 
+\f1 \'83\'49\'81\'5b\'83\'5f\'81\'5b\'83\'65\'81\'5b\'83\'75\'83\'8b\'82\'f0\'8d\'ec\'90\'ac
+\f0 \
+CREATE TABLE restaurant_db.order (\
+\'a0\'a0`date` DATETIME NOT NULL,\
+\'a0\'a0`product_code` INT NOT NULL,\
+\'a0\'a0`product_name` VARCHAR(50) NOT NULL,\
+\'a0\'a0`customer_id` INT NOT NULL,\
+\'a0\'a0`amount` INT NOT NULL,\
+\'a0\'a0`price` INT NOT NULL\
+);\
+\
+\uc0\u9632 
+\f1 \'83\'81\'83\'6a\'83\'85\'81\'5b\'83\'65\'81\'5b\'83\'75\'83\'8b\'82\'cc\'8d\'ec\'90\'ac
+\f0 \
+CREATE TABLE menu (\
+\'a0\'a0product_code INT NOT NULL,\
+\'a0\'a0product_name VARCHAR(255) NOT NULL,\
+\'a0\'a0price INT NOT NULL,\
+\'a0\'a0PRIMARY KEY (product_code)\
+);\
+\
+\uc0\u9632 
+\f1 \'83\'81\'83\'6a\'83\'85\'81\'5b\'83\'65\'81\'5b\'83\'75\'83\'8b\'82\'c9\'8f\'a4\'95\'69\'82\'f0\'92\'c7\'89\'c1
+\f0 \
+INSERT INTO menu (product_code, product_name, price)\
+VALUES\
+\
+\'a0\'a0(100001, '
+\f1 \'83\'56\'81\'5b\'83\'55\'81\'5b\'83\'54\'83\'89\'83\'5f
+\f0 ', 390)\
+\'a0\'a0(100002, '
+\f1 \'83\'4f\'83\'8a\'81\'5b\'83\'93\'83\'54\'83\'89\'83\'5f
+\f0 ', 490),\
+\'a0\'a0(100003, '
+\f1 \'83\'54\'81\'5b\'83\'82\'83\'93\'82\'cc\'83\'4a\'83\'8b\'83\'70\'83\'62\'83\'60\'83\'87
+\f0 ', 580),\
+\'a0\'a0(100004, '
+\f1 \'83\'60\'81\'5b\'83\'59\'90\'b7\'82\'e8\'8d\'87\'82\'ed\'82\'b9
+\f0 ', 850),\
+\'a0\'a0(100005, '
+\f1 \'83\'47\'83\'72\'82\'cc\'90\'b6\'8f\'74\'8a\'aa\'82\'ab
+\f0 ', 620),\
+\'a0\'a0(100006, '
+\f1 \'83\'67\'83\'7d\'83\'67\'82\'cc\'83\'4a\'83\'76\'83\'8c\'81\'5b\'83\'5b
+\f0 ', 690),\
+\'a0\'a0(200001, '
+\f1 \'83\'79\'83\'79\'83\'8d\'83\'93\'83\'60\'81\'5b\'83\'6d
+\f0 ', 890),\
+\'a0\'a0(200002, '
+\f1 \'83\'4a\'83\'8b\'83\'7b\'83\'69\'81\'5b\'83\'89
+\f0 ', 890),\
+\'a0\'a0(200003, '
+\f1 \'8a\'43\'91\'4e\'83\'67\'83\'7d\'83\'67\'83\'70\'83\'58\'83\'5e
+\f0 ', 990),\
+\'a0\'a0(200004, '
+\f1 \'82\'ab\'82\'cc\'82\'b1\'83\'4e\'83\'8a\'81\'5b\'83\'80\'83\'70\'83\'58\'83\'5e
+\f0 ', 1100),\
+\'a0\'a0(200005, '
+\f1 \'83\'7b\'83\'8d\'83\'6c\'81\'5b\'83\'5b
+\f0 ', 1200),\
+\'a0\'a0(200006, '
+\f1 \'96\'be\'91\'be\'83\'4e\'83\'8a\'81\'5b\'83\'80\'83\'70\'83\'58\'83\'5e
+\f0 ', 1500);\
+\
+\
+\uc0\u9632 
+\f1 \'83\'4a\'83\'58\'83\'5e\'83\'7d\'81\'5b\'83\'65\'81\'5b\'83\'75\'83\'8b
+\f0 \
+CREATE TABLE customer (\
+\'a0\'a0customer_id INT NOT NULL AUTO_INCREMENT,\
+\'a0\'a0count INT NOT NULL,\
+\'a0\'a0PRIMARY KEY (customer_id)\
+);\
+}
